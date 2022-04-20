@@ -23,10 +23,10 @@ body {
     color: var(--heading-color);
 }
 /* main-header */
-.main-header a{
+.link{
     text-decoration: none;
 }
-.main-header ul {
+.list {
     list-style: none;
 }
 .logo {
@@ -51,6 +51,12 @@ body {
 .nav-link:hover,
 .nav-link:focus{
     color: var(--accent-color);
+}
+.current {
+    color: var(--accent-color);
+}
+.contact {
+    color: var(--paragraph-color);
 }
 /* ************************************ */
 /* order section */
@@ -110,9 +116,7 @@ body {
     line-height: 1.2;
     text-align: center;
 }
-.benefits-list {
-    list-style: none;
-}
+
 .section-subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -120,7 +124,6 @@ body {
     text-transform: uppercase;
 }
 .benefits-paragraph {
-font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
 color: var(--paragraph-color);
@@ -128,29 +131,26 @@ color: var(--paragraph-color);
 /* *********************************** */
 
 /* our work */
-.our-work {
-    list-style: none;
-}
+
 /* *********************************** */
 /* our team */
-.our-team {
+.team {
     background-color: var(--background-grey);
 }
-.team-list {
-    list-style: none;
-}
+
 .team-list-item {
     width: 270px;
     height: 368px;
-    text-align: center;
-    letter-spacing: var(--ls-003);
-    font-size: 16px;
-    line-height: 1.2;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.item-title {
+.item-title,
+.item-paragraph {
     font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: var(--ls-003);
 }
 .item-paragraph {
     font-weight: 400;
@@ -160,27 +160,21 @@ color: var(--paragraph-color);
 /* footer */
 .page-footer {
     background-color: var(--background-dark);
-    letter-spacing: var(--ls-003);
 }
-.page-footer a {
-    text-decoration: none;
-}
+
 .logo-footer {
     color: var(--white-color);
 }
-.footer-list {
-    list-style: none;
+
+.location,
+.footer-contact {
+    letter-spacing: var(--ls-003);
+    color: var(--white-color);
     font-size: 14px;
     line-height: 1.7;
     font-style: normal;
 }
-.location {
-    color: var(--white-color);
-}
-.location:hover,
-.location:focus {
-    color: var(--accent-color);
-}
+
 .footer-contact {
     color: var(--adress-color);
     transition: 0.3s;

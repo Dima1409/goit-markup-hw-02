@@ -8,9 +8,6 @@
     --heading-color: #212121;
     --background-dark: #2F303A;
     --background-grey: #F5F4FA;
-    --button-color: #F5F4FA;
-    --portfolio-item-color: #EEEEEE;
-
     /*  */
 
     /* letter-spacing */
@@ -26,10 +23,10 @@ body {
     color: var(--heading-color);
 }
 /* main-header */
-.main-header a{
+.link{
     text-decoration: none;
 }
-.main-header ul {
+.list {
     list-style: none;
 }
 .logo {
@@ -55,43 +52,26 @@ body {
 .nav-link:focus{
     color: var(--accent-color);
 }
-/* ************************************ */
-/* order section */
-.order {
-    /* width: 1600px;
-    height: 600px; */
-    background-color: var(--background-dark);
-    text-align: center;
-    letter-spacing: var(--ls-006);
-    color: var(--white-color);
+.current {
+    color: var(--accent-color);
 }
-.order-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
-.order-button {
-    width: 200px;
-    height: 50px;
-    background: var(--accent-color);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Roboto';   
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: var(--ls-006);
-    color: var(--white-color);
-    transition: 0.3s;
-}
-.order-button:hover,
-.order-button:focus {
-    box-shadow: 0 0 4px var(--accent-color);
+.contact {
+    color: var(--paragraph-color);
 }
 /* ********************************* */
 /* potrfolio */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .portfolio-list,
 .portfolio-filter {
     list-style: none;
@@ -117,18 +97,18 @@ body {
     transition: 0.3s;
 }
 .button-filter:hover,
-.button-filter:focus {
+.button-filter:focus,
+.active {
     background-color: var(--accent-color);
     color: var(--white-color);
 }
-.example-list {
+
+.portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: var(--ls-006);
     color: var(--heading-color);
-    text-decoration: none;
-    letter-spacing: var(--ls-006);
 }
 .example-text {
     font-size: 16px;
@@ -140,27 +120,21 @@ body {
 /* footer */
 .page-footer {
     background-color: var(--background-dark);
-    letter-spacing: var(--ls-003);
 }
-.page-footer a {
-    text-decoration: none;
-}
+
 .logo-footer {
     color: var(--white-color);
 }
-.footer-list {
-    list-style: none;
+
+.location,
+.footer-contact {
+    letter-spacing: var(--ls-003);
+    color: var(--white-color);
     font-size: 14px;
     line-height: 1.7;
     font-style: normal;
 }
-.location {
-    color: var(--white-color);
-}
-.location:hover,
-.location:focus {
-    color: var(--accent-color);
-}
+
 .footer-contact {
     color: var(--adress-color);
     transition: 0.3s;
