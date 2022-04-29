@@ -18,8 +18,7 @@
 }
 
 body {
-    font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: var(--heading-color);
 }
 /* main-header */
@@ -45,7 +44,6 @@ body {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: var(--ls-002);
-    transition: 0.3s;
     color: var(--heading-color);
 }
 .nav-link:hover,
@@ -61,8 +59,6 @@ body {
 /* ************************************ */
 /* order section */
 .order {
-    /* width: 1600px;
-    height: 600px; */
     background-color: var(--background-dark);
     text-align: center;
     letter-spacing: var(--ls-006);
@@ -87,7 +83,6 @@ body {
     line-height: 1.9;
     letter-spacing: var(--ls-006);
     color: var(--white-color);
-    transition: 0.3s;
 }
 .order-button:hover,
 .order-button:focus {
@@ -139,8 +134,6 @@ color: var(--paragraph-color);
 }
 
 .team-list-item {
-    width: 270px;
-    height: 368px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -177,10 +170,54 @@ color: var(--paragraph-color);
 
 .footer-contact {
     color: var(--adress-color);
-    transition: 0.3s;
 }
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent-color);
 }
 /* ************************************ */
+
+
+/* PORTFOLIO */
+/* potrfolio */
+
+.portfolio-list,
+.portfolio-filter {
+    list-style: none;
+}
+
+.portfolio-item {
+    border: 1px solid var(--portfolio-item-color);
+}
+.button-filter {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: var(--ls-003);
+    color: var(--heading-color);
+    background-color: var(--button-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 38px;
+}
+.button-filter:hover,
+.button-filter:focus,
+.active {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: var(--ls-006);
+    color: var(--heading-color);
+}
+.example-text {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: var(--ls-003);
+    color: var(--paragraph-color);
+}
